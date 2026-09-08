@@ -1,0 +1,3536 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+```
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="Complete beginner-friendly GitHub Guide covering Git, GitHub, repositories, commits, branches, pull requests, collaboration, GitHub Actions, security and more.">
+
+<meta name="keywords"
+      content="GitHub Guide, Git, GitHub Tutorial, GitHub for Beginners, Git Tutorial">
+
+<title>GitHub Guide — From Zero to GitHub</title>
+
+<!--
+    CSS will be added later in style.css
+-->
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+```
+<div class="container header-container">
+
+    <a href="#home" class="logo">
+        <span class="logo-icon">◉</span>
+        <span>GitHub Guide</span>
+    </a>
+
+    <nav class="main-navigation" aria-label="Main Navigation">
+
+        <a href="#home">Home</a>
+        <a href="#getting-started">Getting Started</a>
+        <a href="#git-basics">Git Basics</a>
+        <a href="#github-basics">GitHub</a>
+        <a href="#collaboration">Collaboration</a>
+        <a href="#advanced">Advanced</a>
+
+    </nav>
+
+    <button class="menu-button" aria-label="Open navigation">
+        ☰
+    </button>
+
+</div>
+```
+
+</header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section id="home" class="hero">
+
+```
+<div class="container hero-grid">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            Beginner → Intermediate → Advanced
+        </span>
+
+        <h1>
+            Learn GitHub
+            <span>from Zero.</span>
+        </h1>
+
+        <p class="hero-description">
+
+            A complete step-by-step guide to Git and GitHub.
+            Learn how to create repositories, save your code,
+            create branches, collaborate with developers,
+            contribute to open source projects and deploy websites.
+
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#getting-started" class="button primary">
+                Start Learning
+            </a>
+
+            <a href="#roadmap" class="button secondary">
+                View Roadmap
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- GitHub Visual -->
+
+    <div class="hero-visual">
+
+        <div class="terminal-window">
+
+            <div class="terminal-header">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <div class="terminal-body">
+
+                <p>
+                    <span class="terminal-prompt">$</span>
+                    git init
+                </p>
+
+                <p>
+                    <span class="terminal-success">
+                        Initialized empty Git repository
+                    </span>
+                </p>
+
+                <p>
+                    <span class="terminal-prompt">$</span>
+                    git add .
+                </p>
+
+                <p>
+                    <span class="terminal-prompt">$</span>
+                    git commit -m "first commit"
+                </p>
+
+                <p>
+                    <span class="terminal-prompt">$</span>
+                    git push origin main
+                </p>
+
+                <p>
+                    <span class="terminal-success">
+                        Everything up-to-date
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     WHAT IS GITHUB?
+========================================================= -->
+
+<section id="github-introduction" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">01</span>
+
+        <div>
+
+            <span class="eyebrow">
+                First Concept
+            </span>
+
+            <h2>What is GitHub?</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="content-grid">
+
+        <article class="content-card">
+
+            <h3>GitHub in simple words</h3>
+
+            <p>
+
+                GitHub is an online platform where developers can
+                store, manage, share and collaborate on software
+                projects.
+
+            </p>
+
+            <p>
+
+                Think of GitHub as a combination of:
+
+            </p>
+
+            <ul>
+
+                <li>Cloud storage for source code</li>
+                <li>Version control</li>
+                <li>Team collaboration</li>
+                <li>Project management</li>
+                <li>Open-source community</li>
+                <li>Software development platform</li>
+
+            </ul>
+
+        </article>
+
+
+        <article class="content-card highlight-card">
+
+            <h3>GitHub is NOT Git</h3>
+
+            <p>
+
+                This is one of the most important concepts
+                beginners should understand.
+
+            </p>
+
+            <div class="comparison">
+
+                <div>
+
+                    <strong>Git</strong>
+
+                    <p>
+                        A version control system installed on
+                        your computer.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <strong>GitHub</strong>
+
+                    <p>
+                        An online platform that hosts Git
+                        repositories and provides collaboration
+                        features.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- Visual -->
+
+    <div class="visual-diagram">
+
+        <div class="diagram-box local">
+
+            <span class="diagram-icon">💻</span>
+
+            <h3>Your Computer</h3>
+
+            <p>Git</p>
+
+        </div>
+
+        <div class="diagram-arrow">
+            →
+        </div>
+
+        <div class="diagram-box remote">
+
+            <span class="diagram-icon">☁️</span>
+
+            <h3>GitHub</h3>
+
+            <p>Remote Repository</p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     ROADMAP
+========================================================= -->
+
+<section id="roadmap" class="section roadmap-section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Your Learning Path
+        </span>
+
+        <h2>GitHub Roadmap</h2>
+
+        <p>
+            Follow these stages in order if you are completely
+            new to GitHub.
+        </p>
+
+    </div>
+
+
+    <div class="roadmap">
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">01</span>
+
+            <div>
+
+                <h3>Understand Git</h3>
+
+                <p>
+                    Learn repositories, commits, branches,
+                    staging and version control.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">02</span>
+
+            <div>
+
+                <h3>Install Git</h3>
+
+                <p>
+                    Install Git on Windows, Linux or macOS.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">03</span>
+
+            <div>
+
+                <h3>Create GitHub Account</h3>
+
+                <p>
+                    Create your GitHub profile and configure
+                    your account.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">04</span>
+
+            <div>
+
+                <h3>Create Repository</h3>
+
+                <p>
+                    Learn public/private repositories,
+                    README files and repository settings.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">05</span>
+
+            <div>
+
+                <h3>Learn Git Commands</h3>
+
+                <p>
+                    init, clone, add, commit, push, pull,
+                    status, log and more.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">06</span>
+
+            <div>
+
+                <h3>Branches</h3>
+
+                <p>
+                    Create isolated development environments
+                    using branches.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">07</span>
+
+            <div>
+
+                <h3>Pull Requests</h3>
+
+                <p>
+                    Learn how developers review and merge
+                    code.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">08</span>
+
+            <div>
+
+                <h3>Collaboration</h3>
+
+                <p>
+                    Work with teams, forks, issues and code
+                    reviews.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="roadmap-item">
+
+            <span class="roadmap-number">09</span>
+
+            <div>
+
+                <h3>Advanced GitHub</h3>
+
+                <p>
+                    Actions, Pages, Releases, Projects,
+                    Packages and security.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     GETTING STARTED
+========================================================= -->
+
+<section id="getting-started" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">02</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Step by Step
+            </span>
+
+            <h2>Getting Started</h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- Step 1 -->
+
+    <article class="tutorial-step">
+
+        <div class="step-number">
+            01
+        </div>
+
+        <div class="step-content">
+
+            <h3>Create a GitHub Account</h3>
+
+            <p>
+
+                The first step is creating an account on GitHub.
+                Your GitHub account becomes your developer identity
+                on the platform.
+
+            </p>
+
+
+            <div class="instruction-list">
+
+                <div class="instruction">
+
+                    <span>1</span>
+
+                    <p>
+                        Open the GitHub website.
+                    </p>
+
+                </div>
+
+                <div class="instruction">
+
+                    <span>2</span>
+
+                    <p>
+                        Click "Sign up".
+                    </p>
+
+                </div>
+
+                <div class="instruction">
+
+                    <span>3</span>
+
+                    <p>
+                        Enter your email address.
+                    </p>
+
+                </div>
+
+                <div class="instruction">
+
+                    <span>4</span>
+
+                    <p>
+                        Create your password.
+                    </p>
+
+                </div>
+
+                <div class="instruction">
+
+                    <span>5</span>
+
+                    <p>
+                        Choose your GitHub username.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tip-box">
+
+                <strong>💡 Tip</strong>
+
+                <p>
+                    If you are building a professional developer
+                    profile, choose a clean username that you are
+                    comfortable using on your resume and portfolio.
+                </p>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- Step 2 -->
+
+    <article class="tutorial-step">
+
+        <div class="step-number">
+            02
+        </div>
+
+        <div class="step-content">
+
+            <h3>Install Git</h3>
+
+            <p>
+
+                Git is the software that allows your computer to
+                communicate with GitHub.
+
+            </p>
+
+
+            <h4>Check whether Git is installed</h4>
+
+            <pre><code>git --version</code></pre>
+
+
+            <p>
+
+                If Git is installed, you will see something
+                similar to:
+
+            </p>
+
+            <pre><code>git version 2.x.x</code></pre>
+
+
+            <h4>Linux / Kali Linux</h4>
+
+            <pre><code>sudo apt update
+```
+
+sudo apt install git</code></pre>
+
+```
+            <h4>Windows</h4>
+
+            <p>
+                Install Git for Windows and use Git Bash,
+                PowerShell or Command Prompt.
+            </p>
+
+
+            <h4>macOS</h4>
+
+            <pre><code>git --version</code></pre>
+
+            <p>
+                macOS may prompt you to install Apple's
+                command-line developer tools.
+            </p>
+
+        </div>
+
+    </article>
+
+
+    <!-- Step 3 -->
+
+    <article class="tutorial-step">
+
+        <div class="step-number">
+            03
+        </div>
+
+        <div class="step-content">
+
+            <h3>Configure Git</h3>
+
+            <p>
+
+                Before making commits, configure the name and
+                email associated with your Git commits.
+
+            </p>
+
+            <pre><code>git config --global user.name "Your Name"
+```
+
+git config --global user.email "[you@example.com](mailto:you@example.com)"</code></pre>
+
+```
+            <h4>Check configuration</h4>
+
+            <pre><code>git config --list</code></pre>
+
+        </div>
+
+    </article>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     GIT BASICS
+========================================================= -->
+
+<section id="git-basics" class="section dark-section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">03</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Version Control
+            </span>
+
+            <h2>Git Basics</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="content-card">
+
+        <h3>What is Version Control?</h3>
+
+        <p>
+
+            Version control allows you to keep track of changes
+            made to files over time.
+
+        </p>
+
+        <p>
+
+            Instead of having files like:
+
+        </p>
+
+        <pre><code>project-final.zip
+```
+
+project-final-2.zip
+project-final-new.zip
+project-final-real.zip</code></pre>
+
+```
+        <p>
+
+            Git allows you to maintain a structured history
+            of your project.
+
+        </p>
+
+    </div>
+
+
+    <!-- Git Workflow Visual -->
+
+    <div class="workflow-diagram">
+
+        <div class="workflow-node">
+
+            <span>📁</span>
+
+            <strong>Working Directory</strong>
+
+            <small>Your files</small>
+
+        </div>
+
+        <div class="workflow-arrow">
+            →
+        </div>
+
+        <div class="workflow-node">
+
+            <span>📦</span>
+
+            <strong>Staging Area</strong>
+
+            <small>Prepared changes</small>
+
+        </div>
+
+        <div class="workflow-arrow">
+            →
+        </div>
+
+        <div class="workflow-node">
+
+            <span>💾</span>
+
+            <strong>Local Repository</strong>
+
+            <small>Commits</small>
+
+        </div>
+
+        <div class="workflow-arrow">
+            →
+        </div>
+
+        <div class="workflow-node">
+
+            <span>☁️</span>
+
+            <strong>GitHub</strong>
+
+            <small>Remote repository</small>
+
+        </div>
+
+    </div>
+
+
+    <!-- Important Git Commands -->
+
+    <div class="command-grid">
+
+        <article class="command-card">
+
+            <code>git init</code>
+
+            <h3>Initialize repository</h3>
+
+            <p>
+                Creates a new Git repository in the current folder.
+            </p>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <code>git status</code>
+
+            <h3>Check status</h3>
+
+            <p>
+                Shows changed, staged and untracked files.
+            </p>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <code>git add</code>
+
+            <h3>Stage changes</h3>
+
+            <p>
+                Adds changes to the staging area.
+            </p>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <code>git commit</code>
+
+            <h3>Create snapshot</h3>
+
+            <p>
+                Saves staged changes into Git history.
+            </p>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <code>git push</code>
+
+            <h3>Upload changes</h3>
+
+            <p>
+                Sends local commits to a remote repository.
+            </p>
+
+        </article>
+
+
+        <article class="command-card">
+
+            <code>git pull</code>
+
+            <h3>Download changes</h3>
+
+            <p>
+                Retrieves and integrates changes from a remote.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     FIRST PROJECT
+========================================================= -->
+
+<section id="first-project" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Your First Repository
+        </span>
+
+        <h2>Put Your First Project on GitHub</h2>
+
+        <p>
+            Follow this workflow to upload an existing project.
+        </p>
+
+    </div>
+
+
+    <div class="big-command-flow">
+
+        <div class="flow-step">
+
+            <span>01</span>
+
+            <h3>Create project</h3>
+
+            <pre><code>mkdir my-project
+```
+
+cd my-project</code></pre>
+
+```
+        </div>
+
+
+        <div class="flow-step">
+
+            <span>02</span>
+
+            <h3>Initialize Git</h3>
+
+            <pre><code>git init</code></pre>
+
+        </div>
+
+
+        <div class="flow-step">
+
+            <span>03</span>
+
+            <h3>Add files</h3>
+
+            <pre><code>git add .</code></pre>
+
+        </div>
+
+
+        <div class="flow-step">
+
+            <span>04</span>
+
+            <h3>Commit</h3>
+
+            <pre><code>git commit -m "Initial commit"</code></pre>
+
+        </div>
+
+
+        <div class="flow-step">
+
+            <span>05</span>
+
+            <h3>Connect GitHub</h3>
+
+            <pre><code>git remote add origin
+```
+
+https://github.com/USERNAME/REPOSITORY.git</code></pre>
+
+```
+        </div>
+
+
+        <div class="flow-step">
+
+            <span>06</span>
+
+            <h3>Push</h3>
+
+            <pre><code>git branch -M main
+```
+
+git push -u origin main</code></pre>
+
+```
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     REPOSITORIES
+========================================================= -->
+
+<section id="repositories" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">04</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Core GitHub Concept
+            </span>
+
+            <h2>Repositories</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="content-grid">
+
+        <article class="content-card">
+
+            <h3>What is a repository?</h3>
+
+            <p>
+
+                A repository, commonly called a "repo", is the
+                place where a project and its Git history are stored.
+
+            </p>
+
+            <p>
+
+                A repository can contain:
+
+            </p>
+
+            <ul>
+
+                <li>Source code</li>
+                <li>Documentation</li>
+                <li>Images</li>
+                <li>Configuration files</li>
+                <li>README.md</li>
+                <li>.gitignore</li>
+                <li>Git history</li>
+
+            </ul>
+
+        </article>
+
+
+        <article class="content-card">
+
+            <h3>Public vs Private</h3>
+
+            <div class="privacy-card">
+
+                <strong>🌎 Public</strong>
+
+                <p>
+                    Anyone can view the repository.
+                </p>
+
+            </div>
+
+            <div class="privacy-card">
+
+                <strong>🔒 Private</strong>
+
+                <p>
+                    Access is restricted to people you authorize.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- Repository Visual -->
+
+    <div class="repository-visual">
+
+        <div class="repo-window">
+
+            <div class="repo-header">
+
+                <strong>
+                    username / my-project
+                </strong>
+
+                <span>
+                    Public
+                </span>
+
+            </div>
+
+            <div class="repo-content">
+
+                <div>📁 src/</div>
+                <div>📁 assets/</div>
+                <div>📄 README.md</div>
+                <div>📄 .gitignore</div>
+                <div>📄 package.json</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     COMMITS
+========================================================= -->
+
+<section id="commits" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">05</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Git History
+            </span>
+
+            <h2>Commits</h2>
+
+        </div>
+
+    </div>
+
+
+    <article class="content-card">
+
+        <h3>What is a commit?</h3>
+
+        <p>
+
+            A commit is a saved snapshot of your project.
+            Every commit creates a point in the project's history.
+
+        </p>
+
+
+        <pre><code>git add .
+```
+
+git commit -m "Add login page"</code></pre>
+
+```
+        <h4>Good commit messages</h4>
+
+        <ul>
+
+            <li>Add user authentication</li>
+            <li>Fix navbar responsive issue</li>
+            <li>Update README documentation</li>
+            <li>Add database models</li>
+
+        </ul>
+
+
+        <h4>Avoid messages like</h4>
+
+        <ul>
+
+            <li>asdf</li>
+            <li>changes</li>
+            <li>update</li>
+            <li>final final</li>
+
+        </ul>
+
+    </article>
+
+
+    <!-- Commit Timeline -->
+
+    <div class="commit-timeline">
+
+        <div class="commit">
+
+            <span>v1</span>
+
+            <strong>Initial project</strong>
+
+            <small>First commit</small>
+
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="commit">
+
+            <span>v2</span>
+
+            <strong>Add login</strong>
+
+            <small>Authentication added</small>
+
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="commit">
+
+            <span>v3</span>
+
+            <strong>Fix bugs</strong>
+
+            <small>Bug fixes</small>
+
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="commit">
+
+            <span>v4</span>
+
+            <strong>Add dashboard</strong>
+
+            <small>New feature</small>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     BRANCHES
+========================================================= -->
+
+<section id="branches" class="section dark-section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">06</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Parallel Development
+            </span>
+
+            <h2>Branches</h2>
+
+        </div>
+
+    </div>
+
+
+    <article class="content-card">
+
+        <h3>What is a branch?</h3>
+
+        <p>
+
+            A branch is an independent line of development.
+            Developers use branches to work on features or fixes
+            without directly changing the main branch.
+
+        </p>
+
+    </article>
+
+
+    <pre><code>git branch
+```
+
+git branch feature-login
+
+git switch feature-login
+
+git switch main</code></pre>
+
+```
+    <!-- Branch Visual -->
+
+    <div class="branch-diagram">
+
+        <div class="branch-main">
+
+            <strong>main</strong>
+
+            <div class="branch-commit">●</div>
+            <div class="branch-line"></div>
+            <div class="branch-commit">●</div>
+            <div class="branch-line"></div>
+            <div class="branch-commit">●</div>
+
+        </div>
+
+
+        <div class="branch-feature">
+
+            <strong>feature-login</strong>
+
+            <div class="feature-line"></div>
+
+            <div class="feature-commit">●</div>
+
+            <div class="feature-line"></div>
+
+            <div class="feature-commit">●</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="tip-box">
+
+        <strong>💡 Think of a branch like this:</strong>
+
+        <p>
+            You have the main version of your application.
+            You want to build a login system.
+            Instead of experimenting directly on main,
+            create a feature branch.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     MERGE
+========================================================= -->
+
+<section id="merge" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">07</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Combining Work
+            </span>
+
+            <h2>Merge</h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="large-text">
+
+        Merging combines changes from one branch into another.
+
+    </p>
+
+
+    <pre><code>git switch main
+```
+
+git merge feature-login</code></pre>
+
+```
+    <div class="merge-visual">
+
+        <div>
+            <strong>feature-login</strong>
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+        </div>
+
+        <div class="merge-arrow">
+            ↓
+        </div>
+
+        <div>
+            <strong>main</strong>
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+            <span>◆</span>
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     REMOTE REPOSITORIES
+========================================================= -->
+
+<section id="remote" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">08</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Local ↔ Cloud
+            </span>
+
+            <h2>Remote Repositories</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="content-grid">
+
+        <article class="content-card">
+
+            <h3>Local Repository</h3>
+
+            <p>
+                Exists on your computer.
+            </p>
+
+            <code>git commit</code>
+
+        </article>
+
+
+        <article class="content-card">
+
+            <h3>Remote Repository</h3>
+
+            <p>
+                Exists on GitHub.
+            </p>
+
+            <code>git push</code>
+
+        </article>
+
+    </div>
+
+
+    <div class="sync-diagram">
+
+        <div class="sync-node">
+
+            <span>💻</span>
+
+            <strong>Local</strong>
+
+            <small>Your Computer</small>
+
+        </div>
+
+        <div class="sync-actions">
+
+            <span>
+                push ↑
+            </span>
+
+            <span>
+                ↓ pull
+            </span>
+
+        </div>
+
+        <div class="sync-node">
+
+            <span>☁️</span>
+
+            <strong>Remote</strong>
+
+            <small>GitHub</small>
+
+        </div>
+
+    </div>
+
+
+    <h3>Important commands</h3>
+
+    <pre><code>git remote -v
+```
+
+git remote add origin URL
+
+git push origin main
+
+git pull origin main</code></pre>
+
+```
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     CLONE
+========================================================= -->
+
+<section id="clone" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Download a Repository
+        </span>
+
+        <h2>Git Clone</h2>
+
+    </div>
+
+
+    <p class="large-text">
+
+        Cloning creates a local copy of a remote GitHub repository.
+
+    </p>
+
+
+    <pre><code>git clone https://github.com/username/project.git</code></pre>
+
+
+    <div class="clone-visual">
+
+        <div class="clone-source">
+
+            <span>☁️</span>
+
+            <strong>GitHub Repository</strong>
+
+        </div>
+
+        <div class="clone-arrow">
+            ↓
+        </div>
+
+        <div class="clone-target">
+
+            <span>💻</span>
+
+            <strong>Your Computer</strong>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     PULL REQUESTS
+========================================================= -->
+
+<section id="pull-requests" class="section dark-section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">09</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Collaboration
+            </span>
+
+            <h2>Pull Requests</h2>
+
+        </div>
+
+    </div>
+
+
+    <article class="content-card">
+
+        <h3>What is a Pull Request?</h3>
+
+        <p>
+
+            A Pull Request, commonly called a PR, is a request
+            to merge your changes into another branch.
+
+        </p>
+
+        <p>
+
+            Pull Requests are one of the most important features
+            used by software development teams.
+
+        </p>
+
+    </article>
+
+
+    <div class="pr-flow">
+
+        <div class="pr-step">
+
+            <span>1</span>
+
+            <strong>Create branch</strong>
+
+            <code>feature-login</code>
+
+        </div>
+
+        <div class="pr-arrow">→</div>
+
+        <div class="pr-step">
+
+            <span>2</span>
+
+            <strong>Write code</strong>
+
+            <code>git commit</code>
+
+        </div>
+
+        <div class="pr-arrow">→</div>
+
+        <div class="pr-step">
+
+            <span>3</span>
+
+            <strong>Push branch</strong>
+
+            <code>git push</code>
+
+        </div>
+
+        <div class="pr-arrow">→</div>
+
+        <div class="pr-step">
+
+            <span>4</span>
+
+            <strong>Open PR</strong>
+
+            <code>Review</code>
+
+        </div>
+
+        <div class="pr-arrow">→</div>
+
+        <div class="pr-step">
+
+            <span>5</span>
+
+            <strong>Merge</strong>
+
+            <code>main</code>
+
+        </div>
+
+    </div>
+
+
+    <h3>Typical Pull Request Review</h3>
+
+    <ul class="check-list">
+
+        <li>Code is reviewed</li>
+        <li>Comments may be added</li>
+        <li>Changes may be requested</li>
+        <li>Automated tests can run</li>
+        <li>Approved code can be merged</li>
+
+    </ul>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     ISSUES
+========================================================= -->
+
+<section id="issues" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">10</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Project Management
+            </span>
+
+            <h2>GitHub Issues</h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="large-text">
+
+        Issues help teams track bugs, feature requests,
+        improvements, questions and tasks.
+
+    </p>
+
+
+    <div class="issue-grid">
+
+        <article class="issue-card">
+
+            <span>🐛</span>
+
+            <h3>Bug</h3>
+
+            <p>
+                Something is not working correctly.
+            </p>
+
+        </article>
+
+
+        <article class="issue-card">
+
+            <span>✨</span>
+
+            <h3>Feature</h3>
+
+            <p>
+                A new functionality that should be added.
+            </p>
+
+        </article>
+
+
+        <article class="issue-card">
+
+            <span>📚</span>
+
+            <h3>Documentation</h3>
+
+            <p>
+                Improve project documentation.
+            </p>
+
+        </article>
+
+
+        <article class="issue-card">
+
+            <span>🔧</span>
+
+            <h3>Task</h3>
+
+            <p>
+                A specific development task.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     FORK
+========================================================= -->
+
+<section id="fork" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">11</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Open Source
+            </span>
+
+            <h2>Forks</h2>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        A fork creates your own copy of another user's repository
+        under your GitHub account.
+
+    </p>
+
+
+    <div class="fork-diagram">
+
+        <div class="fork-repository">
+
+            <span>🏢</span>
+
+            <strong>Original Repository</strong>
+
+            <small>someone/project</small>
+
+        </div>
+
+        <div class="fork-arrow">
+            ↘
+        </div>
+
+        <div class="fork-repository">
+
+            <span>👤</span>
+
+            <strong>Your Fork</strong>
+
+            <small>yourname/project</small>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        Forks are commonly used when contributing to open-source
+        projects where you do not have direct write access.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     README
+========================================================= -->
+
+<section id="readme" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">12</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Documentation
+            </span>
+
+            <h2>README.md</h2>
+
+        </div>
+
+    </div>
+
+
+    <article class="content-card">
+
+        <h3>What is README.md?</h3>
+
+        <p>
+
+            README.md is usually the first documentation file
+            visitors see when they open a repository.
+
+        </p>
+
+
+        <h3>A good README can contain:</h3>
+
+        <ul>
+
+            <li>Project name</li>
+            <li>Project description</li>
+            <li>Features</li>
+            <li>Technologies used</li>
+            <li>Installation instructions</li>
+            <li>Usage instructions</li>
+            <li>Screenshots</li>
+            <li>API documentation</li>
+            <li>Contributing instructions</li>
+            <li>License</li>
+            <li>Author information</li>
+
+        </ul>
+
+    </article>
+
+
+    <pre><code># My Project
+```
+
+A short description of my project.
+
+## Features
+
+* Feature one
+* Feature two
+* Feature three
+
+## Installation
+
+```bash
+git clone https://github.com/username/project.git
+```
+
+## Usage
+
+Explain how to use the project.
+
+## Technologies
+
+* Python
+* Django
+* JavaScript
+
+## License
+
+MIT</code></pre>
+
+```
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     GITIGNORE
+========================================================= -->
+
+<section id="gitignore" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">13</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Protect Your Repository
+            </span>
+
+            <h2>.gitignore</h2>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        The <code>.gitignore</code> file tells Git which files
+        or folders should not be tracked.
+
+    </p>
+
+
+    <h3>Common examples</h3>
+
+    <pre><code>node_modules/
+```
+
+**pycache**/
+.env
+.venv/
+venv/
+*.pyc
+.DS_Store</code></pre>
+
+```
+    <div class="warning-box">
+
+        <strong>⚠️ Never commit secrets</strong>
+
+        <p>
+            API keys, passwords, private keys, database credentials
+            and other sensitive information should not be committed
+            to a public repository.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     SSH
+========================================================= -->
+
+<section id="ssh" class="section dark-section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">14</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Authentication
+            </span>
+
+            <h2>SSH Authentication</h2>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        SSH allows your computer to securely authenticate with
+        GitHub using an SSH key pair.
+
+    </p>
+
+
+    <div class="ssh-visual">
+
+        <div class="ssh-node">
+
+            <span>🔑</span>
+
+            <strong>Private Key</strong>
+
+            <small>Keep secret</small>
+
+        </div>
+
+        <div class="ssh-connection">
+            🔐
+        </div>
+
+        <div class="ssh-node">
+
+            <span>☁️</span>
+
+            <strong>GitHub</strong>
+
+            <small>Public Key</small>
+
+        </div>
+
+    </div>
+
+
+    <h3>Generate an SSH key</h3>
+
+    <pre><code>ssh-keygen -t ed25519 -C "you@example.com"</code></pre>
+
+
+    <h3>Test the connection</h3>
+
+    <pre><code>ssh -T git@github.com</code></pre>
+
+
+    <div class="tip-box">
+
+        <strong>💡 Important</strong>
+
+        <p>
+            Never share your private SSH key.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     COLLABORATION
+========================================================= -->
+
+<section id="collaboration" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">15</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Team Development
+            </span>
+
+            <h2>Working With a Team</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="team-workflow">
+
+        <div class="team-member">
+
+            <span>👨‍💻</span>
+
+            <strong>Developer A</strong>
+
+            <small>Feature A</small>
+
+        </div>
+
+        <div class="team-member">
+
+            <span>👩‍💻</span>
+
+            <strong>Developer B</strong>
+
+            <small>Feature B</small>
+
+        </div>
+
+        <div class="team-member">
+
+            <span>🧑‍💻</span>
+
+            <strong>Developer C</strong>
+
+            <small>Bug Fix</small>
+
+        </div>
+
+    </div>
+
+
+    <h3>Recommended team workflow</h3>
+
+    <ol class="numbered-list">
+
+        <li>Pull the latest changes.</li>
+
+        <li>Create a new branch.</li>
+
+        <li>Work on your task.</li>
+
+        <li>Commit your changes.</li>
+
+        <li>Push your branch.</li>
+
+        <li>Create a Pull Request.</li>
+
+        <li>Wait for review.</li>
+
+        <li>Fix requested changes.</li>
+
+        <li>Merge the Pull Request.</li>
+
+        <li>Delete the feature branch if appropriate.</li>
+
+    </ol>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     MERGE CONFLICTS
+========================================================= -->
+
+<section id="conflicts" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">16</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Troubleshooting
+            </span>
+
+            <h2>Merge Conflicts</h2>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        A merge conflict happens when Git cannot automatically
+        determine which changes should be kept.
+
+    </p>
+
+
+    <pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+```
+
+Your version
+
+=======
+
+Another version
+
+>>>>>>> feature-branch</code></pre>
+
+```
+    <h3>How to resolve a conflict</h3>
+
+    <ol class="numbered-list">
+
+        <li>Open the conflicting file.</li>
+
+        <li>Understand both changes.</li>
+
+        <li>Choose or combine the correct code.</li>
+
+        <li>Remove conflict markers.</li>
+
+        <li>Save the file.</li>
+
+        <li>Add the file.</li>
+
+        <li>Create the merge commit if required.</li>
+
+    </ol>
+
+
+    <pre><code>git add .
+```
+
+git commit -m "Resolve merge conflict"</code></pre>
+
+```
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     GITHUB FEATURES
+========================================================= -->
+
+<section id="github-basics" class="section dark-section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Explore GitHub
+        </span>
+
+        <h2>Important GitHub Features</h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <article class="feature-card">
+
+            <span>📦</span>
+
+            <h3>Repositories</h3>
+
+            <p>
+                Store and manage projects.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>🌿</span>
+
+            <h3>Branches</h3>
+
+            <p>
+                Develop features independently.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>🔀</span>
+
+            <h3>Pull Requests</h3>
+
+            <p>
+                Review and merge changes.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>🐛</span>
+
+            <h3>Issues</h3>
+
+            <p>
+                Track bugs and tasks.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>⚙️</span>
+
+            <h3>Actions</h3>
+
+            <p>
+                Automate development workflows.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>🚀</span>
+
+            <h3>Pages</h3>
+
+            <p>
+                Host static websites.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>📋</span>
+
+            <h3>Projects</h3>
+
+            <p>
+                Organize and manage development work.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <span>🏷️</span>
+
+            <h3>Releases</h3>
+
+            <p>
+                Publish project versions.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     GITHUB ACTIONS
+========================================================= -->
+
+<section id="actions" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">17</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Automation
+            </span>
+
+            <h2>GitHub Actions</h2>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        GitHub Actions allows you to automate tasks such as
+        testing, building and deploying applications.
+
+    </p>
+
+
+    <div class="actions-flow">
+
+        <div>
+            <span>📤</span>
+            <strong>Push Code</strong>
+        </div>
+
+        <div>→</div>
+
+        <div>
+            <span>⚙️</span>
+            <strong>Workflow</strong>
+        </div>
+
+        <div>→</div>
+
+        <div>
+            <span>🧪</span>
+            <strong>Tests</strong>
+        </div>
+
+        <div>→</div>
+
+        <div>
+            <span>🚀</span>
+            <strong>Deploy</strong>
+        </div>
+
+    </div>
+
+
+    <h3>Example workflow location</h3>
+
+    <pre><code>.github/
+```
+
+└── workflows/
+└── ci.yml</code></pre>
+
+```
+    <p>
+        A workflow can run automatically when events such as
+        pushes or pull requests occur.
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     GITHUB PAGES
+========================================================= -->
+
+<section id="pages" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">18</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Deployment
+            </span>
+
+            <h2>GitHub Pages</h2>
+
+        </div>
+
+    </div>
+
+
+    <p>
+
+        GitHub Pages can be used to publish supported static
+        websites directly from a repository.
+
+    </p>
+
+
+    <div class="pages-visual">
+
+        <div>📁 HTML/CSS/JS</div>
+
+        <div>→</div>
+
+        <div>🐙 GitHub</div>
+
+        <div>→</div>
+
+        <div>🌐 Website</div>
+
+    </div>
+
+
+    <h3>Common use cases</h3>
+
+    <ul>
+
+        <li>Personal portfolio</li>
+        <li>Documentation</li>
+        <li>Project landing page</li>
+        <li>Static website</li>
+        <li>Resume website</li>
+
+    </ul>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     SECURITY
+========================================================= -->
+
+<section id="security" class="section warning-section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">19</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Very Important
+            </span>
+
+            <h2>GitHub Security</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="security-grid">
+
+        <article>
+
+            <span>🔐</span>
+
+            <h3>Never commit secrets</h3>
+
+            <p>
+                Keep API keys, passwords and tokens outside
+                your repository.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>🔒</span>
+
+            <h3>Use environment variables</h3>
+
+            <p>
+                Store environment-specific configuration securely.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>🛡️</span>
+
+            <h3>Enable 2FA</h3>
+
+            <p>
+                Add another layer of protection to your GitHub account.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>👀</span>
+
+            <h3>Review permissions</h3>
+
+            <p>
+                Only give collaborators the access they actually need.
+            </p>
+
+        </article>
+
+    </div>
+
+
+    <div class="danger-box">
+
+        <h3>🚨 Example of something you should NEVER commit</h3>
+
+        <pre><code>API_KEY="my-secret-api-key"
+```
+
+DATABASE_PASSWORD="mypassword"
+AWS_SECRET_KEY="secret"</code></pre>
+
+```
+        <p>
+            Put sensitive values in an appropriate secret/configuration
+            mechanism instead of committing them to source control.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     COMMON COMMANDS
+========================================================= -->
+
+<section id="commands" class="section dark-section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Cheat Sheet
+        </span>
+
+        <h2>Essential Git Commands</h2>
+
+    </div>
+
+
+    <div class="commands-table-wrapper">
+
+        <table class="commands-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Command</th>
+                    <th>Purpose</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><code>git init</code></td>
+                    <td>Create a repository</td>
+                </tr>
+
+                <tr>
+                    <td><code>git clone URL</code></td>
+                    <td>Clone repository</td>
+                </tr>
+
+                <tr>
+                    <td><code>git status</code></td>
+                    <td>Check current status</td>
+                </tr>
+
+                <tr>
+                    <td><code>git add .</code></td>
+                    <td>Stage changes</td>
+                </tr>
+
+                <tr>
+                    <td><code>git commit -m "message"</code></td>
+                    <td>Create commit</td>
+                </tr>
+
+                <tr>
+                    <td><code>git push</code></td>
+                    <td>Upload commits</td>
+                </tr>
+
+                <tr>
+                    <td><code>git pull</code></td>
+                    <td>Download changes</td>
+                </tr>
+
+                <tr>
+                    <td><code>git branch</code></td>
+                    <td>List branches</td>
+                </tr>
+
+                <tr>
+                    <td><code>git switch branch</code></td>
+                    <td>Switch branch</td>
+                </tr>
+
+                <tr>
+                    <td><code>git merge branch</code></td>
+                    <td>Merge branch</td>
+                </tr>
+
+                <tr>
+                    <td><code>git log</code></td>
+                    <td>View commit history</td>
+                </tr>
+
+                <tr>
+                    <td><code>git diff</code></td>
+                    <td>View changes</td>
+                </tr>
+
+                <tr>
+                    <td><code>git remote -v</code></td>
+                    <td>View remote repositories</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     COMPLETE WORKFLOW
+========================================================= -->
+
+<section id="complete-workflow" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Real World Workflow
+        </span>
+
+        <h2>How Developers Actually Use GitHub</h2>
+
+    </div>
+
+
+    <div class="real-world-flow">
+
+        <div class="real-step">
+            <span>01</span>
+            <strong>Pull latest code</strong>
+            <code>git pull</code>
+        </div>
+
+        <div class="real-arrow">↓</div>
+
+        <div class="real-step">
+            <span>02</span>
+            <strong>Create branch</strong>
+            <code>git switch -c feature</code>
+        </div>
+
+        <div class="real-arrow">↓</div>
+
+        <div class="real-step">
+            <span>03</span>
+            <strong>Write code</strong>
+            <code>Code...</code>
+        </div>
+
+        <div class="real-arrow">↓</div>
+
+        <div class="real-step">
+            <span>04</span>
+            <strong>Check changes</strong>
+            <code>git status</code>
+        </div>
+
+        <div class="real-arrow">↓</div>
+
+        <div class="real-step">
+            <span>05</span>
+            <strong>Stage</strong>
+            <code>git add .</code>
+        </div>
+
+        <div class="real-arrow">↓</div>
+
+        <div class="real-step">
+            <span>06</span>
+            <strong>Commit</strong>
+            <code>git commit</code>
+        </div>
+
+        <div class="real-arrow">↓</div>
+
+        <div class="real-step">
+            <span>07</span>
+            <strong>Push</strong>
+            <code>git push</code>
+        </div>
+
+        <div class="real-arrow">↓</div>
+
+        <div class="real-step">
+            <span>08</span>
+            <strong>Create Pull Request</strong>
+            <code>Review</code>
+        </div>
+
+        <div class="real-arrow">↓</div>
+
+        <div class="real-step">
+            <span>09</span>
+            <strong>Merge</strong>
+            <code>main</code>
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     COMMON MISTAKES
+========================================================= -->
+
+<section id="mistakes" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading">
+
+        <span class="section-number">20</span>
+
+        <div>
+
+            <span class="eyebrow">
+                Beginner Mistakes
+            </span>
+
+            <h2>Things You Should Avoid</h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="mistakes-grid">
+
+        <article>
+
+            <span>01</span>
+
+            <h3>Committing secrets</h3>
+
+            <p>
+                Never commit API keys, passwords or private credentials.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>02</span>
+
+            <h3>Working directly on main</h3>
+
+            <p>
+                Use branches for features and experiments.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>03</span>
+
+            <h3>Bad commit messages</h3>
+
+            <p>
+                Write clear messages describing what changed.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>04</span>
+
+            <h3>Ignoring .gitignore</h3>
+
+            <p>
+                Do not upload dependencies, environment files
+                or generated files unnecessarily.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>05</span>
+
+            <h3>Never pulling changes</h3>
+
+            <p>
+                In a team environment, regularly synchronize
+                your local branch.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>06</span>
+
+            <h3>Uploading huge files</h3>
+
+            <p>
+                Git repositories are not a replacement for
+                arbitrary large-file storage.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     GITHUB PROFILE
+========================================================= -->
+
+<section id="profile" class="section dark-section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Developer Identity
+        </span>
+
+        <h2>Build a Good GitHub Profile</h2>
+
+    </div>
+
+
+    <div class="profile-checklist">
+
+        <label>
+            <input type="checkbox">
+            Professional profile picture
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Clear bio
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Relevant location
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Portfolio website
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Good project repositories
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Detailed README files
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Consistent contribution activity
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Pinned best projects
+        </label>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     PROJECT IDEA
+========================================================= -->
+
+<section id="practice" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Practice
+        </span>
+
+        <h2>Your First GitHub Project</h2>
+
+        <p>
+            The best way to learn GitHub is to actually use it.
+        </p>
+
+    </div>
+
+
+    <div class="practice-card">
+
+        <h3>Build a simple portfolio website</h3>
+
+        <p>
+            Create an HTML/CSS/JavaScript portfolio and practice
+            the complete GitHub workflow.
+        </p>
+
+
+        <h4>Practice checklist</h4>
+
+        <ol>
+
+            <li>Create a local project.</li>
+
+            <li>Initialize Git.</li>
+
+            <li>Create a GitHub repository.</li>
+
+            <li>Create a README.</li>
+
+            <li>Create a .gitignore.</li>
+
+            <li>Make your first commit.</li>
+
+            <li>Push the project to GitHub.</li>
+
+            <li>Create a feature branch.</li>
+
+            <li>Make a change.</li>
+
+            <li>Open a Pull Request.</li>
+
+            <li>Merge the Pull Request.</li>
+
+            <li>Publish the website.</li>
+
+        </ol>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section id="faq" class="section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Frequently Asked Questions
+        </span>
+
+        <h2>GitHub FAQ</h2>
+
+    </div>
+
+
+    <div class="faq-container">
+
+        <details>
+
+            <summary>
+                Is GitHub the same as Git?
+            </summary>
+
+            <p>
+                No. Git is a version control system while GitHub
+                is an online platform that hosts Git repositories
+                and provides collaboration tools.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Do I need Git to use GitHub?
+            </summary>
+
+            <p>
+                Not for every GitHub feature. However, learning
+                Git is extremely useful if you want to work
+                professionally with software repositories.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                What is GitHub used for?
+            </summary>
+
+            <p>
+                GitHub is used for source-code hosting,
+                collaboration, code review, issue tracking,
+                automation, documentation and many other
+                software-development workflows.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                What is a repository?
+            </summary>
+
+            <p>
+                A repository is a project storage location
+                containing files and version history.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                What is a branch?
+            </summary>
+
+            <p>
+                A branch is an independent line of development
+                used to work on changes without directly modifying
+                another branch.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                What is a Pull Request?
+            </summary>
+
+            <p>
+                A Pull Request proposes changes from one branch
+                to another and allows discussion, review,
+                testing and eventually merging.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Can GitHub be used for private projects?
+            </summary>
+
+            <p>
+                Yes. GitHub supports private repositories.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                Can I use GitHub for my portfolio?
+            </summary>
+
+            <p>
+                Yes. GitHub can be an excellent place to showcase
+                software projects and technical work.
+            </p>
+
+        </details>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     FINAL CHECKLIST
+========================================================= -->
+
+<section id="checklist" class="section dark-section">
+
+```
+<div class="container">
+
+    <div class="section-heading centered">
+
+        <span class="eyebrow">
+            Congratulations
+        </span>
+
+        <h2>GitHub Beginner Checklist</h2>
+
+    </div>
+
+
+    <div class="final-checklist">
+
+        <label>
+            <input type="checkbox">
+            I understand Git vs GitHub
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I installed Git
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I configured Git
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I created a GitHub account
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I created a repository
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I understand commits
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I understand branches
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I can push and pull code
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I understand Pull Requests
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I understand merge conflicts
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I know how to use .gitignore
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I know how to write a README
+        </label>
+
+        <label>
+            <input type="checkbox">
+            I know basic GitHub security practices
+        </label>
+
+    </div>
+
+
+    <div class="completion-message">
+
+        <span>🚀</span>
+
+        <h3>
+            You're ready to start using GitHub!
+        </h3>
+
+        <p>
+            Keep practicing with real projects and gradually
+            learn advanced Git and GitHub workflows.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+```
+<div class="container footer-grid">
+
+    <div>
+
+        <h3>GitHub Guide</h3>
+
+        <p>
+            Learn Git and GitHub from the ground up.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h4>Learn</h4>
+
+        <a href="#git-basics">Git Basics</a>
+        <a href="#repositories">Repositories</a>
+        <a href="#branches">Branches</a>
+        <a href="#pull-requests">Pull Requests</a>
+
+    </div>
+
+
+    <div>
+
+        <h4>Advanced</h4>
+
+        <a href="#actions">GitHub Actions</a>
+        <a href="#pages">GitHub Pages</a>
+        <a href="#security">Security</a>
+        <a href="#collaboration">Collaboration</a>
+
+    </div>
+
+
+    <div>
+
+        <h4>Resources</h4>
+
+        <a href="#commands">Commands</a>
+        <a href="#faq">FAQ</a>
+        <a href="#practice">Practice</a>
+        <a href="#checklist">Checklist</a>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <p>
+        © 2026 GitHub Guide. Built for learners.
+    </p>
+
+</div>
+```
+
+</footer>
+
+<!--
+=========================================================
+JAVASCRIPT WILL BE ADDED LATER
+=========================================================
+-->
+<script src="script.js"></script>
+
+</body>
+
+</html>
